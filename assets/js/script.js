@@ -14,6 +14,16 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+    
+/**
+ * Keydown listening for a key being pressed,
+ *  if it enter check answer to question
+ */
+    document.getElementById("answer-box").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            checkAnswer();
+        }
+    });
 
     runGame("addition");
 
